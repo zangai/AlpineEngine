@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="alpine" root=".">
+      <df name="bin">
+      </df>
+      <df name="obj">
+      </df>
+      <df name="src" kind="SOURCE_LOGICAL_FOLDER">
+        <df name="client" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="gui" kind="SOURCE_LOGICAL_FOLDER">
+            <df name="debug" kind="SOURCE_LOGICAL_FOLDER">
+              <in>Target.cpp</in>
+              <in>Target.hpp</in>
+            </df>
+            <df name="elements" kind="SOURCE_LOGICAL_FOLDER">
+              <df name="label" kind="SOURCE_LOGICAL_FOLDER">
+                <in>Label.cpp</in>
+                <in>Label.hpp</in>
+              </df>
+              <df name="progbar" kind="SOURCE_LOGICAL_FOLDER">
+                <in>ColorProgressBar.cpp</in>
+                <in>ColorProgressBar.hpp</in>
+                <in>ProgressBar.cpp</in>
+                <in>ProgressBar.hpp</in>
+              </df>
+              <in>BaseElement.hpp</in>
+              <in>GuiElement.cpp</in>
+              <in>GuiElement.hpp</in>
+            </df>
+            <df name="interfaces" kind="SOURCE_LOGICAL_FOLDER">
+              <in>IBackgroundColor.hpp</in>
+              <in>IForegroundColor.hpp</in>
+              <in>ILeftClickable.hpp</in>
+              <in>IRightClickable.hpp</in>
+            </df>
+            <in>Events.hpp</in>
+            <in>GUI.cpp</in>
+            <in>GUI.hpp</in>
+          </df>
+          <df name="objects" kind="SOURCE_LOGICAL_FOLDER">
+            <in>Character.cpp</in>
+            <in>Character.hpp</in>
+            <in>Layer.cpp</in>
+            <in>Layer.hpp</in>
+            <in>Map.cpp</in>
+            <in>Map.hpp</in>
+            <in>Player.cpp</in>
+            <in>Player.hpp</in>
+            <in>Resource.cpp</in>
+            <in>Resource.hpp</in>
+            <in>Tile.cpp</in>
+            <in>Tile.hpp</in>
+            <in>World.cpp</in>
+            <in>World.hpp</in>
+          </df>
+          <df name="res" kind="SOURCE_LOGICAL_FOLDER">
+            <df name="gfx" kind="SOURCE_LOGICAL_FOLDER">
+            </df>
+          </df>
+          <df name="scenes" kind="SOURCE_LOGICAL_FOLDER">
+            <in>DebugScene.cpp</in>
+            <in>DebugScene.hpp</in>
+            <in>GameScene.cpp</in>
+            <in>GameScene.hpp</in>
+            <in>MenuScene.cpp</in>
+            <in>MenuScene.hpp</in>
+          </df>
+          <in>ChatHandler.cpp</in>
+          <in>GFX.cpp</in>
+          <in>GFX.hpp</in>
+          <in>InputMask.cpp</in>
+          <in>InputMask.hpp</in>
+          <in>PacketHandler.cpp</in>
+          <in>PacketHandler.hpp</in>
+          <in>RenderScene.cpp</in>
+          <in>RenderScene.hpp</in>
+          <in>Session.cpp</in>
+          <in>Session.hpp</in>
+          <in>main.cpp</in>
+        </df>
+        <df name="server" kind="SOURCE_LOGICAL_FOLDER">
+          <in>AsyncServerSocket.cpp</in>
+          <in>AsyncServerSocket.hpp</in>
+          <in>Database.cpp</in>
+          <in>Database.hpp</in>
+          <in>PacketHandler.cpp</in>
+          <in>PacketHandler.hpp</in>
+          <in>PlayerHandler.cpp</in>
+          <in>Saveable.hpp</in>
+          <in>Server.cpp</in>
+          <in>Server.hpp</in>
+          <in>Session.cpp</in>
+          <in>Session.hpp</in>
+          <in>User.cpp</in>
+          <in>User.hpp</in>
+          <in>WorldSession.cpp</in>
+          <in>WorldSession.hpp</in>
+          <in>main.cpp</in>
+        </df>
+        <df name="shared" kind="SOURCE_LOGICAL_FOLDER">
+          <in>AsyncSocket.cpp</in>
+          <in>AsyncSocket.hpp</in>
+          <in>Flags.cpp</in>
+          <in>Flags.hpp</in>
+          <in>Log.cpp</in>
+          <in>Log.hpp</in>
+          <in>ObjectAccessor.cpp</in>
+          <in>ObjectAccessor.hpp</in>
+          <in>cryptopp_wrapper.hpp</in>
+          <in>debug.hpp</in>
+          <in>opcode.hpp</in>
+          <in>packet.cpp</in>
+          <in>packet.hpp</in>
+        </df>
+        <df name="tools" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="tileseteditor" kind="SOURCE_LOGICAL_FOLDER">
+            <in>App.cpp</in>
+            <in>App.hpp</in>
+            <in>Snippets.cpp</in>
+            <in>Snippets.hpp</in>
+            <in>TileSelect.cpp</in>
+            <in>TileSelect.hpp</in>
+            <in>main.cpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="win" kind="SOURCE_LOGICAL_FOLDER">
+        <df name="vc100" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="AlpineEngineSetup" kind="SOURCE_LOGICAL_FOLDER">
+          </df>
+          <df name="res" kind="SOURCE_LOGICAL_FOLDER">
+          </df>
+          <df name="tools" kind="SOURCE_LOGICAL_FOLDER">
+            <df name="TileSetEditor" kind="SOURCE_LOGICAL_FOLDER">
+            </df>
+          </df>
+          <in>resource.h</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>Makefile-alpine.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-alpine.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>$(MAKE) -f Makefile</buildCommand>
+          <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>/usr/local/lib/boost/include</pElem>
+              <pElem>/usr/include/cryptopp</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>__REGISTER_PREFIX__=</Elem>
+              <Elem>__USER_LABEL_PREFIX__=</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <folder path="alpine/src/server">
+        <ccTool>
+          <incDir>
+            <pElem>src/server</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="alpine/src/shared">
+        <ccTool>
+          <incDir>
+            <pElem>src/shared</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="src/client/ChatHandler.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/GFX.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/GFX.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/InputMask.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/InputMask.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/PacketHandler.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/PacketHandler.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/RenderScene.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/RenderScene.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/Session.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/Session.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/Events.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/GUI.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/gui/GUI.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/debug/Target.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/gui/debug/Target.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/elements/BaseElement.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/elements/GuiElement.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/gui/elements/GuiElement.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/elements/label/Label.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/gui/elements/label/Label.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/elements/progbar/ColorProgressBar.cpp"
+            ex="true"
+            tool="1">
+      </item>
+      <item path="src/client/gui/elements/progbar/ColorProgressBar.hpp"
+            ex="true"
+            tool="3">
+      </item>
+      <item path="src/client/gui/elements/progbar/ProgressBar.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/gui/elements/progbar/ProgressBar.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/interfaces/IBackgroundColor.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/interfaces/IForegroundColor.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/interfaces/ILeftClickable.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/gui/interfaces/IRightClickable.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/main.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Character.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Character.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/objects/Layer.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Layer.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/objects/Map.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Map.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/objects/Player.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Player.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/objects/Resource.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Resource.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/objects/Tile.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/Tile.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/objects/World.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/objects/World.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/scenes/DebugScene.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/scenes/DebugScene.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/scenes/GameScene.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/scenes/GameScene.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/client/scenes/MenuScene.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/client/scenes/MenuScene.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/server/AsyncServerSocket.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src/shared</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/server/PacketHandler.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src/shared</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/server/PlayerHandler.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src/shared</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/server/Session.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src/shared</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/server/WorldSession.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/server/WorldSession.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/server/main.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src/shared</pElem>
+            <pElem>src</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_REENTRANT=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/shared/AsyncSocket.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/shared/ObjectAccessor.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/shared/packet.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/tools/tileseteditor/App.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/tools/tileseteditor/App.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/tools/tileseteditor/Snippets.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/tools/tileseteditor/Snippets.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/tools/tileseteditor/TileSelect.cpp" ex="true" tool="1">
+      </item>
+      <item path="src/tools/tileseteditor/TileSelect.hpp" ex="true" tool="3">
+      </item>
+      <item path="src/tools/tileseteditor/main.cpp" ex="true" tool="1">
+      </item>
+      <item path="win/vc100/resource.h" ex="true" tool="3">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

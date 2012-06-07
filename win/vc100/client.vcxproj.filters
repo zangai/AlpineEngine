@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\client\main.cpp" />
+    <ClCompile Include="..\..\src\client\Session.cpp" />
+    <ClCompile Include="..\..\src\client\PacketHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\ChatHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\GFX.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Character.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\objects\Layer.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\objects\Player.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\objects\Tile.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\InputMask.cpp" />
+    <ClCompile Include="..\..\src\client\GUI\GUI.cpp">
+      <Filter>Objects\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\scenes\MenuScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\scenes\GameScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\RenderScene.cpp" />
+    <ClCompile Include="..\..\src\client\scenes\DebugScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\gui\elements\progbar\ColorProgressBar.cpp">
+      <Filter>Objects\GUI\elements\progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\gui\elements\progbar\ProgressBar.cpp">
+      <Filter>Objects\GUI\elements\progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\gui\elements\label\Label.cpp">
+      <Filter>Objects\GUI\elements\label</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\gui\elements\GuiElement.cpp">
+      <Filter>Objects\GUI\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\gui\debug\Target.cpp">
+      <Filter>Objects\GUI\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\objects\World.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\objects\Resource.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client\objects\Map.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\client\scenes\MenuScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\scenes\GameScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\RenderScene.hpp" />
+    <ClInclude Include="..\..\src\client\scenes\DebugScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\debug\Target.hpp">
+      <Filter>Objects\GUI\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\elements\label\Label.hpp">
+      <Filter>Objects\GUI\elements\label</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\elements\progbar\ColorProgressBar.hpp">
+      <Filter>Objects\GUI\elements\progressbar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\elements\progbar\ProgressBar.hpp">
+      <Filter>Objects\GUI\elements\progressbar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\elements\BaseElement.hpp">
+      <Filter>Objects\GUI\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\elements\GuiElement.hpp">
+      <Filter>Objects\GUI\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\interfaces\IBackgroundColor.hpp">
+      <Filter>Objects\GUI\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\interfaces\IForegroundColor.hpp">
+      <Filter>Objects\GUI\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\interfaces\ILeftClickable.hpp">
+      <Filter>Objects\GUI\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\interfaces\IRightClickable.hpp">
+      <Filter>Objects\GUI\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\gui\Events.hpp">
+      <Filter>Objects\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\GUI\GUI.hpp">
+      <Filter>Objects\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\objects\Character.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\objects\Layer.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\objects\Player.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\objects\Tile.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\PacketHandler.hpp">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\GFX.hpp" />
+    <ClInclude Include="..\..\src\client\InputMask.hpp" />
+    <ClInclude Include="resource.hpp" />
+    <ClInclude Include="..\..\src\client\Session.hpp" />
+    <ClInclude Include="..\..\src\client\objects\World.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\objects\Resource.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client\objects\Map.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Handlers">
+      <UniqueIdentifier>{fc13e465-d9d1-43fc-9cc6-7562672b8610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{d15c6e10-bd15-462d-b6f2-498c10bef8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI">
+      <UniqueIdentifier>{5b77fc5b-558b-4a3d-8355-b0a99e80ca41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{18d1455f-8637-4315-81c9-2dafe386e9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI\interfaces">
+      <UniqueIdentifier>{65209bfd-75ed-4209-9868-485b02ed4961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI\elements">
+      <UniqueIdentifier>{0e77306b-1de6-4842-a9a4-750603507624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI\elements\progressbar">
+      <UniqueIdentifier>{a53aa42b-9ecd-4d99-9a58-c95381abfa58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI\elements\label">
+      <UniqueIdentifier>{d17c1ac1-c928-4804-8d68-de65c8860e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI\debug">
+      <UniqueIdentifier>{e49ee663-1529-4863-bbee-2e8319d25a90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AlpineIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="client.rc" />
+  </ItemGroup>
+</Project>

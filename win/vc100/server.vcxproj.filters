@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\server\AsyncServerSocket.cpp" />
+    <ClCompile Include="..\..\src\server\main.cpp" />
+    <ClCompile Include="..\..\src\server\Session.cpp" />
+    <ClCompile Include="..\..\src\server\WorldSession.cpp" />
+    <ClCompile Include="..\..\src\server\User.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\server\PacketHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\server\PlayerHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\server\Server.cpp" />
+    <ClCompile Include="..\..\src\server\Database.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\server\WorldSession.hpp" />
+    <ClInclude Include="..\..\src\server\Session.hpp" />
+    <ClInclude Include="..\..\src\server\User.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\server\PacketHandler.hpp">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\server\AsyncServerSocket.hpp" />
+    <ClInclude Include="..\..\src\server\Server.hpp" />
+    <ClInclude Include="..\..\src\server\Saveable.hpp" />
+    <ClInclude Include="..\..\src\server\Database.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{2fa334f5-4332-42bd-b0ec-f34ea954a5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handlers">
+      <UniqueIdentifier>{22bfd7f2-6d07-4c4d-abb7-f84a433049b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

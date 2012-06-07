@@ -1,0 +1,17 @@
+=== Setting Up ===
+This will be quite briefly:
+
+Structure has been changed so now you have to have a
+lib folder in the repository root with the following structure
+
+lib/
+  boost/			A boost install
+    boost/
+	bjam.exe
+	bootstrap.bat
+	...
+  sfml/				An sfml install
+    build/
+	doc/
+	...
+   

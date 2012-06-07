@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAE3855E-74CD-4DBA-835A-70C91E4899B3}</ProjectGuid>
+    <RootNamespace>LimestoneClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30128.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\$(Configuration)\Client\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\$(Configuration)\Client\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">alpine-client</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">alpine-client</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\lib\sfml\include;..\..\lib\boost;..\..\src\;..\..\src\client\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)alpine-client.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\sfml\lib\vc2010;..\..\lib\boost\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;OpenGL32.lib;GLu32.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>..\..\buildtool.exe $(ProjectName) $(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\lib\sfml\include;..\..\lib\boost;..\..\src\;..\..\src\client\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)alpine-client.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\sfml\lib\vc2010;..\..\lib\boost\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;OpenGL32.lib;GLu32.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>..\..\buildtool.exe $(ProjectName) $(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\client\ChatHandler.cpp" />
+    <ClCompile Include="..\..\src\client\GFX.cpp" />
+    <ClCompile Include="..\..\src\client\gui\elements\GuiElement.cpp" />
+    <ClCompile Include="..\..\src\client\gui\elements\label\Label.cpp" />
+    <ClCompile Include="..\..\src\client\gui\elements\progbar\ColorProgressBar.cpp" />
+    <ClCompile Include="..\..\src\client\gui\elements\progbar\ProgressBar.cpp" />
+    <ClCompile Include="..\..\src\client\GUI\GUI.cpp" />
+    <ClCompile Include="..\..\src\client\gui\debug\Target.cpp" />
+    <ClCompile Include="..\..\src\client\InputMask.cpp" />
+    <ClCompile Include="..\..\src\client\main.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Character.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Map.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Resource.cpp" />
+    <ClCompile Include="..\..\src\client\objects\World.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Layer.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Player.cpp" />
+    <ClCompile Include="..\..\src\client\objects\Tile.cpp" />
+    <ClCompile Include="..\..\src\client\PacketHandler.cpp" />
+    <ClCompile Include="..\..\src\client\RenderScene.cpp" />
+    <ClCompile Include="..\..\src\client\scenes\DebugScene.cpp" />
+    <ClCompile Include="..\..\src\client\scenes\GameScene.cpp" />
+    <ClCompile Include="..\..\src\client\scenes\MenuScene.cpp" />
+    <ClCompile Include="..\..\src\client\Session.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\client\GFX.hpp" />
+    <ClInclude Include="..\..\src\client\gui\elements\BaseElement.hpp" />
+    <ClInclude Include="..\..\src\client\gui\elements\GuiElement.hpp" />
+    <ClInclude Include="..\..\src\client\gui\elements\label\Label.hpp" />
+    <ClInclude Include="..\..\src\client\gui\elements\progbar\ColorProgressBar.hpp" />
+    <ClInclude Include="..\..\src\client\gui\elements\progbar\ProgressBar.hpp" />
+    <ClInclude Include="..\..\src\client\gui\Events.hpp" />
+    <ClInclude Include="..\..\src\client\GUI\GUI.hpp" />
+    <ClInclude Include="..\..\src\client\gui\interfaces\IBackgroundColor.hpp" />
+    <ClInclude Include="..\..\src\client\gui\interfaces\IForegroundColor.hpp" />
+    <ClInclude Include="..\..\src\client\gui\interfaces\IRightClickable.hpp" />
+    <ClInclude Include="..\..\src\client\gui\interfaces\ILeftClickable.hpp" />
+    <ClInclude Include="..\..\src\client\gui\debug\Target.hpp" />
+    <ClInclude Include="..\..\src\client\InputMask.hpp" />
+    <ClInclude Include="..\..\src\client\objects\Character.hpp" />
+    <ClInclude Include="..\..\src\client\objects\Map.hpp" />
+    <ClInclude Include="..\..\src\client\objects\Resource.hpp" />
+    <ClInclude Include="..\..\src\client\objects\World.hpp" />
+    <ClInclude Include="..\..\src\client\objects\Layer.hpp" />
+    <ClInclude Include="..\..\src\client\objects\Player.hpp" />
+    <ClInclude Include="..\..\src\client\objects\Tile.hpp" />
+    <ClInclude Include="..\..\src\client\PacketHandler.hpp" />
+    <ClInclude Include="..\..\src\client\RenderScene.hpp" />
+    <ClInclude Include="..\..\src\client\scenes\DebugScene.hpp" />
+    <ClInclude Include="..\..\src\client\scenes\GameScene.hpp" />
+    <ClInclude Include="..\..\src\client\scenes\MenuScene.hpp" />
+    <ClInclude Include="..\..\src\client\Session.hpp" />
+    <ClInclude Include="resource.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="shared.vcxproj">
+      <Project>{1b8ad2af-144d-41a6-9b42-fa73477ad23c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AlpineIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="client.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
